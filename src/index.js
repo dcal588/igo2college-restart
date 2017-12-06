@@ -34,9 +34,9 @@ class App extends React.Component {
      		url: data.results[0]['school.school_url'],
      		tuition: data.results[0]['2015.cost.tuition.in_state'],
      		debt: data.results[0]['2015.aid.median_debt.completers.overall'] 
-    	})
- 	  })
-
+ 	    })
+    }
+);
     render() {
       return (
         <div>
