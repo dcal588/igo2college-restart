@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar';
 import request from 'superagent';
 import './styles/app.css';
 
-class App extends React.Component {
+export class App extends React.Component {
 	constructor() {
     super();
     this.state = {
@@ -51,3 +51,4 @@ class App extends React.Component {
 
 
 ReactDOM.render(<App />, document.getElementById('app'));
+yar
