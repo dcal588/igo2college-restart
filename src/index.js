@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar';
 import request from 'superagent';
 import './styles/app.css';
 
-class App extends React.Component {
+export class App extends React.Component {
 	constructor() {
     super();
     this.state = {
@@ -15,13 +15,8 @@ class App extends React.Component {
    		tuition: '',
    		debt: ''
     };
-<<<<<<< HEAD
     // this.handleTermChange = this.handleTermChange.bind(this)
-=======
-    this.handleTermChange = this.handleTermChange.bind(this);
->>>>>>> 2a0fa70e934ced9a9e9bea0864cb37a5ded6f992
   }
-
   handleTermChange = (term) => {
     const apiKey = 'XdOHSc8fKhMKidPu2HWqCZmMy9OxtCJamGC580Bi';
     const fields = `_fields=school.name,school.city,school.state,school.accreditor,school.school_url,2015.cost.tuition.in_state,2015.aid.median_debt.completers.overall,2015.cost.tuition.in_state&school.name=${this.state.schoolName}`;
@@ -37,12 +32,8 @@ class App extends React.Component {
      		// tuition: data.results[0]['2015.cost.tuition.in_state'],
      		// debt: data.results[0]['2015.aid.median_debt.completers.overall']
  	    })
-<<<<<<< HEAD
     })
 }
-=======
-    }
->>>>>>> 2a0fa70e934ced9a9e9bea0864cb37a5ded6f992
     render() {
       return (
         <div>
@@ -60,3 +51,4 @@ class App extends React.Component {
 
 
 ReactDOM.render(<App />, document.getElementById('app'));
+yar
