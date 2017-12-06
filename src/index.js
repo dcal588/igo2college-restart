@@ -16,8 +16,9 @@ class App extends React.Component {
    		tuition: '',
    		debt: ''
     };
-    this.handleTermChange = this.handleTermChange.bind(this)
+    this.handleTermChange = this.handleTermChange.bind(this);
   }
+
   handleTermChange = (term) => {
     const apiKey = 'XdOHSc8fKhMKidPu2HWqCZmMy9OxtCJamGC580Bi';
     const fields = `_fields=school.name,school.city,school.state,school.accreditor,school.school_url,2015.cost.tuition.in_state,2015.aid.median_debt.completers.overall,2015.cost.tuition.in_state&school.name=${this.state.schoolName}`;
@@ -36,7 +37,6 @@ class App extends React.Component {
      		debt: data.results[0]['2015.aid.median_debt.completers.overall'] 
  	    })
     }
-);
     render() {
       return (
         <div>
