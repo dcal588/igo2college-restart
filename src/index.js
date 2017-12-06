@@ -27,14 +27,14 @@ class App extends React.Component {
     request.get(url, (err, res, data)
     .then((res) => res.json())
     .then((data) => {
-     	this.setState({ 
+     	this.setState({
      		schoolName: data.results[0]['school.name'],
      		city: data.results[0]['school.city'],
     		state: data.results[0]['school.state'],
      		accreditor: data.results[0]['school.accreditor'],
      		url: data.results[0]['school.school_url'],
      		tuition: data.results[0]['2015.cost.tuition.in_state'],
-     		debt: data.results[0]['2015.aid.median_debt.completers.overall'] 
+     		debt: data.results[0]['2015.aid.median_debt.completers.overall']
  	    })
     }
     render() {
