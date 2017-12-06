@@ -1,0 +1,18 @@
+.introheader {
+  position:relative;
+  min-height:690px;
+  height:100%;
+  margin-bottom: 0;
+  background: url("https://static.pexels.com/photos/267885/pexels-photo-267885.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.introbox {
+  position:relative;
+  top:300px;
+}
+h1 {
+  margin-top:0px!important;
+}
