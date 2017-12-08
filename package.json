@@ -2,6 +2,8 @@
   "name": "igo2collegerestart",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
+  "homepage": "https://github.com/dcal588/igo2college-restart",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
